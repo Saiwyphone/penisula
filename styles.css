@@ -14,7 +14,7 @@ header {
 
 nav {
     float: center; 
-    text-align: auto;
+    text-align: right;
 }
 
 nav ul {
@@ -44,6 +44,7 @@ nav ul li a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: right;
 }
 
 .hero-section {
