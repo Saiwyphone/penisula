@@ -1,0 +1,93 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:#E9ECF5;
+}
+
+
+header {
+    
+    padding: 10px;
+    color: white;
+}
+
+nav {
+    float: center; 
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.book-now-btn {
+    background-color: #FFD700;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hotel-name {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.email-us-btn {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.email-us-btn:hover {
+    background-color: #555;
+}
+
+button:hover {
+    background-color: white;
+    
+}
+
+.footer-left {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    margin: 5px; 
+}
+
+.bx bx-search-alt-2{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px; 
+}

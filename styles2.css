@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #E9ECF5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #E9ECF5;
+    
+    
+}
+
+.email-container {
+    margin-top: 20px;
+}
+
+.email {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.response {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.response p {
+    margin: 0;
+}
+
+.response strong {
+    font-weight: normal;
+    color: #333;
+}
+
+nav {
+    float: center; 
+    text-align: right;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+
+.book-now-btn {
+    background-color: #FFD700;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bx bx-search-alt-2 {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px; 
+}
