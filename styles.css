@@ -14,7 +14,7 @@ header {
 
 nav {
     float: center; 
-    text-align: right;
+    text-align: auto;
 }
 
 nav ul {
