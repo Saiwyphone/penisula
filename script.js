@@ -1,4 +1,4 @@
-
+import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
         const API_KEY = "AIzaSyDBRFT7wu_xXLmyrWNzAjVWWpu4WycYyHU";
         const genAI = new GoogleGenerativeAI(API_KEY);
