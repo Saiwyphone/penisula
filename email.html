@@ -144,6 +144,12 @@
 
 
        document.getElementById('send-button').addEventListener('click', generateResponse);
+       document.getElementById('body').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent default behavior (e.g., adding newline)
+                generateResponse(); // Call the generateResponse function
+            }
+        });
     </script>
 
 </body>
