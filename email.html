@@ -36,7 +36,6 @@
 
     
 
-    <!-- <script type="importmap" src="script.js"></script> -->
     <script type="importmap">
         {
           "imports": {
@@ -114,13 +113,17 @@
 
  
     
-    responseContainer.innerHTML = `
-                <div class="email response">
-                    <strong>Response:</strong><br>
-                    <strong>User:</strong> ${userInquiry}<br>
-                    <strong>Chat:</strong> ${text}<br>
-                </div>
-            `;
+    let previousContent = responseContainer.innerHTML;
+
+        
+        responseContainer.innerHTML = `
+            ${previousContent}
+            <div class="email response">
+                <strong>Response:</strong><br>
+                <strong>User:</strong> ${userInquiry}<br>
+                <strong>Chat:</strong> ${text}<br>
+            </div>
+        `;
 
 
 
