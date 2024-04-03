@@ -48,7 +48,6 @@
 
         const API_KEY = "AIzaSyDBRFT7wu_xXLmyrWNzAjVWWpu4WycYyHU";
         const genAI = new GoogleGenerativeAI(API_KEY);
-
         async function generateResponse() {
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
     const userInquiry = document.getElementById('body').value ;
@@ -58,7 +57,10 @@
     }
 
     const responseContainer = document.getElementById('email-container');
-    responseContainer.innerHTML = 'Generating response...';
+    let previousContent = responseContainer.innerHTML;
+
+
+    responseContainer.innerHTML = previousContent + '<div id="generating-response">Generating response...</div>';
     
   
     const chat = model.startChat({
@@ -104,7 +106,7 @@
 
 
 
-   
+
     const result = await chat.sendMessage(userInquiry);
     const response = await result.response;
     const text = response.text();
@@ -113,17 +115,20 @@
 
  
     
-    let previousContent = responseContainer.innerHTML;
 
         
-        responseContainer.innerHTML = `
-            ${previousContent}
-            <div class="email response">
-                <strong>Response:</strong><br>
-                <strong>User:</strong> ${userInquiry}<br>
-                <strong>Chat:</strong> ${text}<br>
-            </div>
-        `;
+    responseContainer.innerHTML = previousContent + `
+        <div class="email response">
+            <strong>Response:</strong><br>
+            <strong>User:</strong> ${userInquiry}<br>
+            <strong>Chat:</strong> ${text}<br>
+        </div>
+    `;
+
+    const generatingResponse = document.getElementById('generating-response');
+    if (generatingResponse) {
+        generatingResponse.remove();
+    }
 
 
 
