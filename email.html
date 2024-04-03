@@ -34,6 +34,9 @@
     </section>
     <div class="email-container" id="email-container"></div>
 
+
+    
+
     
 
     <script type="importmap">
@@ -55,6 +58,9 @@
         alert('Please input your inquiry.');
         return;
     }
+
+    document.getElementById('body').value = '';
+
 
     const responseContainer = document.getElementById('email-container');
     let previousContent = responseContainer.innerHTML;

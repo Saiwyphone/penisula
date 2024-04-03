@@ -79,13 +79,63 @@ button:hover {
     
 }
 
-.footer-left {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    margin: 5px; 
+footer {
+    background-color: #f4f4f4;
+    width: 100%;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.contact-info-left {
+    flex: 1; 
+    text-align: left;
+}
+
+.contact-info-right {
+    flex: 1; 
+    text-align: right;
+}
+
+.contact-info-left h2 {
+    margin-top: 0;
+}
+
+.contact-info-left p,
+.contact-info-right p {
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+    }
+    
+    .contact-info-left,
+    .contact-info-right {
+        text-align: center; 
+    }
+}
+
+
+.copyright-container {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    background-color: #333;
+}
+
+.copyright {
+    color: white;
+}
+
 
 .bx bx-search-alt-2{
     color: white;
